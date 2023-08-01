@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <style>
+    #headliner {
+      font-size: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="./index.html">Home</a>
+    <a href="./Pages/collection1.html">Collection 1</a>
+    <a href="./Pages/collection2.html">Collection 2</a>
+    <a href="./Pages/collection3.html">Collection 3</a>
+    <a href="./form.html">New video</a>
+  </nav>
+<h1>Add New Video</h1>
+<form action="/action_page.php">
+    <label for="title" id="headliner"><strong>Video Title</strong></label><br>
+    <input type="text" id="title" name="title" placeholder="Input value"><br><br>
+  
+    <label for="description" id="headliner"><strong>Description</strong></label><br>
+    <textarea id="description" name="description" rows="4" cols="50" placeholder="Text area content"></textarea><br><br>
+  
+    <label for="myfile" id="headliner"><strong>Video</strong></label><br>
+    <input type="file" id="myfile" name="myfile"><br><br>
+    
+ 
+    <select name="category" required>
+      <option value="" disabled selected hidden>Choose a collection</option>
+      <option value="coffee">Collection 1</option>
+      <option value="tea">Collection 2</option>
+      <option value="milk">Collection 3</option>
+    </select>
+    <br><br><br>
+
+    <input name="collection_type" id="public" type="radio" value="public">
+    <label for="public">Public</label>
+
+    <input name="collection_type" id="private" type="radio" value="private">
+    <label for="private">Private</label><br>
+
+    <br><br>
+    
+    <input type="submit" value="Upload video">
+  </form> 
+
+
+</body>
+</html>
